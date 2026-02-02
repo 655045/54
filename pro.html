@@ -24,7 +24,7 @@
             font-size: 20px;
         }
         .mid{
-        
+            
            display:block;
            width:40%;
            margin: 20px auto;
@@ -32,7 +32,7 @@
         }
         .right{
           position: absolute;
-            top:34px;
+            top:43px;
             right:20px;
             display:inline-block;
 
@@ -65,7 +65,39 @@
          .navbar li a:hover, .navbar li a.active{
            text-decoration: underline;
            color:grey;
+        }                   
+        .container{
+           width:33%;
+           border: 2px solid white;
+           padding:76px;
+           border-radius: 28px;
+          margin:85px 25px;
         }
+        .form-group input{
+            text-align: center;
+            border:2px solid black;
+            display: block;
+            width:500px;
+            margin:11px auto;
+            padding:1px;
+            font-size: 23px;
+            border-radius: 8px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-group input:hover{
+            background-color: aqua;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display:block;
+            width: 74%;
+            margin: 20px auto;
+            
+        }
+             
+
         
         </style>
     </head>
@@ -81,13 +113,31 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Fitness calculator</a></li>
                         <li><a href="#">Contact us</a></li>
-                     </ul>
+                     </ul>    
                 </div>
                     <div class="right">
                        <button class="btn">call us now</button>
                         <button class="btn">email us</button>
                     </div>
         </header>
+        <div class="container">
+        <h1>join the best gym of delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+        </div>
 
     </body>
 </html>
